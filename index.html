@@ -17,33 +17,43 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="header-navigation">
-                <a href="./index.html" class="header-logo logo link" lang="en"><span class="logo-part">Web</span>Studio</a>
-                <ul class="header-list list">
-                    <li class="header-list-item">
-                        <a class="header-list-link link active" href="./index.html">Студия</a>
+            <nav class="navigation">
+                <!--header-navigation-->>
+                <a href="./index.html" class="link logo header__logo" lang="en"><span class="logo__part">Web</span>Studio</a>
+                <!-- <a>header-logo logo link      span logo-part -->
+                <ul class="list navigation__list">
+                    <!--header-list list-->>
+                    <li class="navigation__item">
+                        <!-- header-list-item -->
+                        <a class="link navigation__link navigation__link--active" href="./index.html">Студия</a>
+                        <!-- header-list-link link active -->
                     </li>
-                    <li class="header-list-item">
-                        <a class="header-list-link link" href="./portfolio.html">Портфолио</a>
+                    <li class="navigation__item">
+                        <a class="link navigation__link" href="./portfolio.html">Портфолио</a>
                     </li>
-                    <li class="header-list-item">
-                        <a class="header-list-link link" href="">Контакты </a>
+                    <li class="navigation__item">
+                        <a class="link navigation__link" href="">Контакты </a>
                     </li>
                 </ul>
             </nav>
-            <ul class="header-contacts list">
-                <li class="header-contacts-item">
-                    <a class="header-contacts-link link" href="mailto:info@devstudio.com">
-                        <svg class="icon-envelope">
+            <ul class="list header-contacts__list">
+                <!-- header-contacts list -->
+                <li class="header-contacts__item">
+                    <!-- header-contacts-item -->
+                    <a class="link header-contacts__link" href="mailto:info@devstudio.com">
+                        <!-- header-contacts-link link -->
+                        <svg class="header-contacts__icon header-contacts__icon--envelope">
+                            <!-- icon-envelope -->
                             <use href="./images/icons.svg#icon-envelope">
                             </use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="header-contacts-item">
-                    <a class="header-contacts-link link" href="tel:+380961111111">
-                        <svg class="icon-smartphone">
+                <li class="header-contacts__item">
+                    <a class="link header-contacts__link" href="tel:+380961111111">
+                        <svg class="header-contacts__icon header-contacts__icon--smartphone">
+                            <!-- icon-smartphone -->
                             <use href="./images/icons.svg#icon-smartphone">
                             </use>
                         </svg>
