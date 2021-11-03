@@ -74,7 +74,7 @@
                         </use>
                     </svg>
                 </button>
-                <form class="moda__form">
+                <form class="modal__form">
                     <!-- modal-form -->
                     <p class="modal__slogan">Оставьте свои данные, мы вам перезвоним</p>
                     <!-- modal-slogan -->
@@ -468,35 +468,40 @@
             </div>
             <div class="footer__social-media">
                 <!-- footer-social-links-container -->
-                <p class="footer-social-links-text">Присоединяйтесь</p>
-                <ul class="social-links-list list">
-                    <li class="social-links-item">
-                        <a class="social-links-link link" href="">
-                            <svg class="social-links-icon" width="20px" height="20px">
+                <p class="social-media__slogan">Присоединяйтесь</p>
+                <!-- footer-social-links-text -->
+                <ul class="list social-media__list">
+                    <!-- social-links-list list -->
+                    <li class="social-media__item">
+                        <!-- social-links-item -->
+                        <a class="link social-media__link" href="">
+                            <!-- social-links-link link -->
+                            <svg class="social-media__icon" width="20px" height="20px">
+                                <!-- social-links-icon -->
                                 <use href="./images/icons.svg#icon-instagram">
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-links-item">
-                        <a class="social-links-link link" href="">
-                            <svg class="social-links-icon" width="20px" height="20px">
+                    <li class="social-media__item">
+                        <a class="link social-media__link" href="">
+                            <svg class="social-media__icon" width="20px" height="20px">
                                 <use href="./images/icons.svg#icon-twitter">
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-links-item">
-                        <a class="social-links-link link" href="">
-                            <svg class="social-links-icon" width="20px" height="20px">
+                    <li class="social-media__item">
+                        <a class="link social-media__link" href="">
+                            <svg class="social-media__icon" width="20px" height="20px">
                                 <use href="./images/icons.svg#icon-facebook">
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-links-item">
-                        <a class="social-links-link link" href="">
-                            <svg class="social-links-icon" width="20px" height="20px">
+                    <li class="social-media__item">
+                        <a class="link social-media__link" href="">
+                            <svg class="social-media__icon" width="20px" height="20px">
                                 <use href="./images/icons.svg#icon-linkedin">
                                 </use>
                             </svg>
@@ -504,21 +509,25 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-form-container">
-                <form>
-                    <label class="footer-subscribe-label">
-                        <span class="footer-subscribe-slogan">Подпишитесь на рассылку</span>
-                        <input class="footer-subscribe-field" type="email" name="email" placeholder="E-mail" />
+            <form class="footer__subscribe-form">
+                <!-- footer-form-container -->
+                    <label class="subscribe-form__label">
+                        <!-- footer-subscribe-label -->
+                        <span class="subscribe-form__slogan">Подпишитесь на рассылку</span>
+                        <!-- footer-subscribe-slogan -->
+                        <input class="subscribe-form__email-input" type="email" name="email" placeholder="E-mail" />
+                        <!-- footer-subscribe-field -->
                     </label>
-                    <button class="footer-subscribe-button btn" type="submit">
+                    <button class="button subscribe-form__button" type="submit">
+                        <!-- footer-subscribe-button btn -->
                         <span>Подписаться</span>
-                        <svg class="footer-subscribe-icon" width="24px" height="24px">
+                        <svg class="subscribe-form__icon" width="24px" height="24px">
+                            <!-- footer-subscribe-icon -->
                             <use href="./images/icons.svg#icon-send">
                             </use>
                         </svg>
                     </button>
-                </form>
-            </div>
+            </form>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
