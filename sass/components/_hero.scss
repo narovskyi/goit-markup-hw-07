@@ -1,4 +1,4 @@
-.hero {
+.hero__section {
   background-color: var(--main-background-color);
   max-width: 1600px;
   height: 600px;
@@ -15,12 +15,12 @@
   background-position: center;
 }
 
-.hero > .container {
+.hero__section > .container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -35,7 +35,7 @@
   width: 700px;
 }
 
-.hero-button {
+.hero__button {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -59,8 +59,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: #188ce8;
 }
 
@@ -83,11 +83,11 @@
   pointer-events: none;
 }
 
-.backdrop.is-hidden .hero-modal {
+.backdrop.backdrop--is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-.hero-modal {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -105,7 +105,7 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close {
+.modal__button--close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -125,12 +125,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:focus,
-.modal-close:hover {
+.modal__button--close:focus,
+.modal__button--close:hover {
   fill: currentColor;
 }
 
-.modal-slogan {
+.modal__slogan {
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -142,18 +142,18 @@
   color: var(--secondary-title-color);
 }
 
-.modal-label {
+.modal__label {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.modal-label:focus-within {
+.modal__label:focus-within {
   fill: var(--accent-color);
 }
 
-.modal-label-name {
+.label__name {
   display: block;
   margin-bottom: 4px;
 
@@ -165,7 +165,7 @@
   color: var(--main-text-color);
 }
 
-.modal-input-text {
+.label__text-input {
   padding-left: 42px;
   width: 448px;
   height: 40px;
@@ -174,23 +174,23 @@
   border-radius: 4px;
 }
 
-.modal-input-text:focus {
+.label__text-input:focus {
   outline: none;
   border-color: var(--accent-color);
 }
 
-.modal-icon {
+.label__icon {
   position: absolute;
   bottom: 11px;
   left: 12px;
 }
 
-.modal-label-textarea {
+.modal__textarea-label {
   display: block;
   margin-bottom: 20px;
 }
 
-.modal-textarea {
+.label__textarea {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 16px;
@@ -205,7 +205,7 @@
   resize: none;
 }
 
-.modal-textarea::placeholder {
+.label__textarea::placeholder {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -213,19 +213,19 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-textarea:focus {
+.label__textarea:focus {
   outline: none;
   border-color: var(--accent-color);
 }
 
-.modal-label-checkbox {
+.modal__checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.modal-checkbox {
+.checkbox__input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -233,7 +233,7 @@
   position: absolute;
 }
 
-.modal-checkbox-icon {
+.checkbox__icon {
   margin-right: 7px;
   width: 16px;
   height: 15px;
@@ -242,7 +242,7 @@
   border-radius: 2px;
 }
 
-.modal-checkbox:checked + .modal-checkbox-icon {
+.checkbox__input:checked + .checkbox__icon {
   background-origin: border-box;
   border-color: var(--accent-color);
   background-color: var(--accent-color);
@@ -250,7 +250,7 @@
   background-size: contain;
 }
 
-.modal-checkbox-text {
+.checkbox__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -258,11 +258,11 @@
   color: var(--main-text-color);
 }
 
-.modal-checkbox-link {
+.checkbox__link {
   color: var(--accent-color);
 }
 
-.modal-button-send {
+.modal__button--send {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -282,8 +282,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-send:hover,
-.modal-button-send:focus {
+.modal__button--send:hover,
+.modal__button--send:focus {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

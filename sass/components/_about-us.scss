@@ -1,29 +1,18 @@
-.about-us > .container {
+.about-us__section > .container {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
 
-.about-us-slogans-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--secondary-title-color);
-
-  margin-bottom: 10px;
-}
-
-.about-us-slogans-list {
+.about-us__slogans {
   display: flex;
   margin-bottom: 94px;
 }
 
-.about-us-slogans-item:not(:last-child) {
+.slogans__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.about-us-icon-container {
+.slogans__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,13 +26,24 @@
   border-radius: 4px;
 }
 
-.about-us-icon {
+.slogans__icon {
   display: block;
   width: 70px;
   height: 70px;
 }
 
-.about-us-slogans-text {
+.slogans__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+
+  margin-bottom: 10px;
+}
+
+.slogans__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -52,14 +52,14 @@
   width: 270px;
 }
 
-.about-us-title {
+.about-us__title {
   margin-bottom: 50px;
 }
 
-.about-us-gallery {
+.about-us__gallery {
   display: flex;
 }
 
-.about-us-photo:not(:last-child) {
+.gallery__item:not(:last-child) {
   margin-right: 30px;
 }
