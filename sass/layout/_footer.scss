@@ -8,18 +8,18 @@
   background-color: var(--main-background-color);
 }
 
-.footer-logo {
+.footer-address__container {
+  margin-right: 70px;
+}
+
+.footer__logo {
   display: block;
   color: #ffffff;
 
   margin-bottom: 20px;
 }
 
-.footer-address-container {
-  margin-right: 70px;
-}
-
-.footer-address {
+.footer__address {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -31,15 +31,12 @@
   margin-bottom: 9px;
 }
 
-.footer-contacts-item:not(:last-child) {
+.footer-contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-contacts-link {
+.footer-contacts__link {
   font-style: normal;
-}
-
-.footer-contacts-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -51,17 +48,17 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contacts-link:hover,
-.footer-contacts-link:focus {
+.footer-contacts__link:hover,
+.footer-contacts__link:focus {
   color: var(--accent-color);
 }
 
-.footer-social-links-container {
+.footer__social-media {
   padding-top: 12px;
   margin-right: 93px;
 }
 
-.footer-social-links-text {
+.social-media__slogan {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -72,22 +69,22 @@
   margin-bottom: 20px;
 }
 
-.footer .social-links-link {
+.footer .social-media__link {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
 
-.footer .social-links-link:hover,
-.social-links-link:focus {
+.footer .social-media__link:hover,
+.footer .social-media__link:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
 
-.footer-form-container {
+.footer__subscribe-form {
   padding-top: 12px;
 }
 
-.footer-subscribe-slogan {
+.subscribe-form__slogan {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -99,7 +96,7 @@
   margin-bottom: 20px;
 }
 
-.footer-subscribe-field {
+.subscribe-form__email-input {
   margin-right: 12px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -118,11 +115,11 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.footer-subscribe-field::placeholder {
+.subscribe-form__email-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-subscribe-button {
+.subscribe-form__button {
   display: inline-flex;
   align-items: center;
   padding-top: 10px;
@@ -145,13 +142,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-subscribe-button:hover,
-.footer-subscribe-button:focus {
+.subscribe-form__button:hover,
+.subscribe-form__button:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.footer-subscribe-icon {
+.subscribe-form__icon {
   fill: currentColor;
   margin-left: 10px;
 }
