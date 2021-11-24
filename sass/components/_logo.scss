@@ -4,8 +4,7 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.logo__part {
-  color: var(--accent-color);
+  &__part {
+    color: var(--accent-color);
+  }
 }

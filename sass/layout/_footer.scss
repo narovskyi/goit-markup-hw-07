@@ -1,11 +1,21 @@
-.footer > .container {
-  display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .footer {
+  .container {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   background-color: var(--main-background-color);
+
+  .social-media__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: #ffffff;
+    }
+  }
 }
 
 .footer-address__container {
@@ -31,8 +41,10 @@
   margin-bottom: 9px;
 }
 
-.footer-contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+.footer-contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contacts__link {
@@ -46,11 +58,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer__social-media {
@@ -67,17 +79,6 @@
   color: #ffffff;
 
   margin-bottom: 20px;
-}
-
-.footer .social-media__link {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-}
-
-.footer .social-media__link:hover,
-.footer .social-media__link:focus {
-  background-color: var(--accent-color);
-  color: #ffffff;
 }
 
 .footer__subscribe-form {
@@ -115,8 +116,10 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.subscribe-form__email-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+.subscribe-form__email-input {
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .subscribe-form__button {
@@ -140,12 +143,12 @@
   transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.subscribe-form__button:hover,
-.subscribe-form__button:focus {
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .subscribe-form__icon {

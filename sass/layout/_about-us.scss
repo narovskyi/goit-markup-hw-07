@@ -1,6 +1,8 @@
-.about-us__section > .container {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
+.about-us__section {
+  .container {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+  }
 }
 
 .about-us__slogans {
@@ -8,8 +10,10 @@
   margin-bottom: 94px;
 }
 
-.slogans__item:not(:last-child) {
-  margin-right: 30px;
+.slogans__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .slogans__container {
@@ -60,6 +64,8 @@
   display: flex;
 }
 
-.gallery__item:not(:last-child) {
-  margin-right: 30px;
+.gallery__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
