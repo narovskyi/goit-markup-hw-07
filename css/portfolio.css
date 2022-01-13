@@ -250,7 +250,7 @@ img {
   margin-bottom: 50px;
 }
 
-.portfolio__buttons-item :not(:last-child) {
+.portfolio__buttons-item:not(:last-child) {
   margin-right: 8px;
 }
 
